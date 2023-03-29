@@ -12,7 +12,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index path="/" element={<ViewUsers />} />
-            <Route path="/add" element={<AddUser />} />
+            <Route path="/add" element={<AddUser data={{_id:'',name:'',grade:''}} method='post'/>} />
           </Route>
         </Routes>
       </BrowserRouter>
